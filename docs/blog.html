@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oioitoi - Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #27374d;
+        }
+        header {
+            background: linear-gradient(135deg, #7d9d9c, #526d82);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #f0ebe3;
+            border-bottom: 8px solid #ffc288;
+        }
+        header img {
+            max-width: 63.28125px; /* Further reduced to 75% of the current size */
+            height: auto;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: lowercase;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .back-link a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #ff6701;
+            font-weight: bold;
+            text-transform: lowercase;
+        }
+        main {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .blog-post {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #9db2bf;
+            padding-bottom: 20px;
+        }
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto; /* Center justify images */
+        }
+        .blog-post h2 {
+            font-size: 2rem;
+            color: #27374d;
+            margin-bottom: 10px;
+            text-transform: lowercase;
+            text-align: center; /* Center justify titles */
+        }
+        .blog-post p {
+            font-size: 1.1rem;
+            color: #526d82;
+            line-height: 1.8;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            font-size: 1rem;
+            border: 1px solid #9db2bf;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="oioitoi logo white thick.png" alt="oioitoi logo">
+        <h1>oioitoi blog</h1>
+    </header>
+    <div class="back-link">
+        <a href="index.html">return to main page</a>
+    </div>
+    <main>
+        <div class="search-bar">
+            <input type="text" placeholder="Search by keywords...">
+        </div>
+        <div class="blog-post">
+            <h2>nursery rhyme time</h2>
+            <img src="blog-image1.jpg" alt="Blog Post Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacus a magna tincidunt viverra.</p>
+            <p style='font-size: 0.9rem; color: #9db2bf; text-align: right;'>Published on: January 2, 2025</p>
+            <p style='font-size: 0.9rem; color: #526d82; text-align: left; margin-top: 5px;'>#hashtag1 #hashtag2 #hashtag3</p>
+        </div>
+        <div class="blog-post">
+            <h2>wheel world problems</h2>
+            <img src="blog-image2.jpg" alt="Blog Post Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacus a magna tincidunt viverra.</p>
+        </div>
+        <div class="blog-post">
+            <h2>for the love of words</h2>
+            <img src="blog-image3.jpg" alt="Blog Post Image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel lacus a magna tincidunt viverra.</p>
+        </div>
+    </main>
+</body>
+</html>
+
