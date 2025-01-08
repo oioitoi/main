@@ -40,31 +40,16 @@
             <div class="grid-container">
                 <div class="grid-item"><img src="images/toy-images/Toy-1.jpg" alt="Toy 1"></div>
                 <div class="grid-item"><img src="images/toy-images/Toy-2.jpg" alt="Toy 2"></div>
-                <div class="grid-item"><img src="toy-3.jpg" alt="Toy 3"></div>
-                <div class="grid-item"><img src="toy4.jpg" alt="Toy 4"></div>
-                <div class="grid-item"><img src="toy5.jpg" alt="Toy 5"></div>
-                <div class="grid-item"><img src="toy6.jpg" alt="Toy 6"></div>
+                <div class="grid-item"><img src="images/toy-images/Toy-3.jpg" alt="Toy 3"></div>
+                <div class="grid-item"><img src="images/toy-images/Toy-4.jpg" alt="Toy 4"></div>
+                <div class="grid-item"><img src="images/toy-images/Toy-5.jpg" alt="Toy 5"></div>
+                <div class="grid-item"><img src="images/toy-images/Toy-6.jpg" alt="Toy 6"></div>
             </div>
         </section>
         <section id="blog">
             <h2>blog</h2>
-            <div class="blog-container">
-                <div class="blog-post">
-                    <img src="blog1.jpg" alt="Nursery Rhyme Time">
-                    <h3>nursery rhyme time</h3>
-                    <p>Explore the magic of nursery rhymes that bring joy to learning.</p>
-                </div>
-                <div class="blog-post">
-                    <img src="blog2.jpg" alt="Wheel World Problems">
-                    <h3>wheel world problems</h3>
-                    <p>Discover the joy of rolling into creativity with wheels!</p>
-                </div>
-                <div class="blog-post">
-                    <img src="blog3.jpg" alt="For the Love of Words">
-                    <h3>for the love of words</h3>
-                    <p>Unleashing imagination through storytelling and words.</p>
-                </div>
-            </div>
+            <div class="blog-container"></div>
+			
         </section>
         <section id="social" class="social-section">
             <h2>oioitoi gets social</h2>
@@ -77,6 +62,47 @@
                 <div><img src="social5.jpg" alt="Instagram Post 5"></div>
                 <div><img src="social6.jpg" alt="Instagram Post 6"></div>
             </div>
+			
+<section id="blog">
+    <h2>blog</h2>
+    <div class="blog-container"></div>
+</section>
+
+<script>
+    const blogPosts = [
+        {
+            title: "feeling good",
+            img: "images/blog-images/Blog-001.png",
+            excerpt: "As an old year rolls into a new one, sitting in the window...",
+            link: "blog.html#feeling-good"
+        },
+        {
+            title: "wheel world problems",
+            img: "images/blog-images/Blog-002.png",
+            excerpt: "Discover the joy of rolling into creativity with wheels!",
+            link: "blog.html#wheel-world-problems"
+        },
+        {
+            title: "for the love of words",
+            img: "images/blog-images/Blog-003.png",
+            excerpt: "Unleashing imagination through storytelling and words.",
+            link: "blog.html#for-the-love-of-words"
+        }
+    ];
+
+    const blogContainer = document.querySelector(".blog-container");
+    blogPosts.slice(0, 3).forEach(post => {
+        const postDiv = document.createElement("div");
+        postDiv.className = "blog-post";
+        postDiv.innerHTML = `
+            <img src="${post.img}" alt="${post.title}">
+            <h3>${post.title}</h3>
+            <p>${post.excerpt}</p>
+            <a href="${post.link}">Read more</a>
+        `;
+        blogContainer.appendChild(postDiv);
+    });
+</script>
         </section>
         <section id="contact">
             <h2>contact us</h2>
@@ -86,5 +112,6 @@
     <footer>
         <p>&copy; 2025 oioitoi</p>
     </footer>
+	
 </body>
 </html>
