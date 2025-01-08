@@ -128,6 +128,29 @@ nav ul li a {
 .grid-item img:hover {
     transform: scale(1.05);
 }
+.grid-item {
+    position: relative;
+    text-align: center; /* Ensures proper alignment */
+}
+
+.description {
+    position: absolute;
+    bottom: 10px; /* Adjust position relative to the grid item */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: none; /* Hidden by default */
+    width: 90%; /* Adjust width as necessary */
+    text-align: center;
+}
+
+.grid-item:hover .description {
+    display: block; /* Show description on hover */
+}
 /* Blog section */
 .blog-container {
     display: grid;
