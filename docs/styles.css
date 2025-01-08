@@ -124,6 +124,9 @@ nav ul li a {
     object-fit: cover;
     display: block;
 }
+.grid-item img:hover {
+    transform: scale(1.05);
+}
 /* Blog section */
 .blog-container {
     display: grid;
