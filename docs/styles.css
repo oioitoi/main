@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* CSS Document */
+/* General styles */body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #27374d;
+    background-color: #f0ebe3;
+}
+
+main {
+    max-width: 1200px;
+    margin: 100px auto 0; /* Adjust for fixed header */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header styles */header {
+    background: linear-gradient(135deg, #7d9d9c, #526d82);
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #f0ebe3;
+    border-bottom: 8px solid #ffc288;
+}
+
+header img {
+    max-width: 80px;
+    height: auto;
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header-text p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    justify-content: flex-end; /* Align to the right */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0ebe3;
+    font-weight: bold;
+}
+
+/* About section */
+.about {
+    background: url('images/wavy-edge-top-e4dccf.png') no-repeat top center, #ffffff;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    padding: 80px 20px 10px; /* Adjust bottom padding */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #526d82;
+    text-align: left;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Mission section */
+.mission {
+    background: url('images/wave-bottom-e4dccf.png') no-repeat bottom center, #ffffff;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    padding: 10px 20px 80px; /* Adjust top padding */
+    margin-top: -5px;
+}
+.mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #526d82;
+    text-align: left;
+}
+.mission p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Toys section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 3px solid #526d82;
+    object-fit: cover;
+    display: block;
+}
+/* Blog section */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.blog-post {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #dde6ed;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #526d82;
+    text-align: left;
+}
+
+/* Social section */
+.social-section {
+    background-color: #dde6ed;
+    text-align: center;
+    padding: 40px 20px 20px; /* Increased top padding */
+    position: relative;
+    z-index: 1;
+}
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.social-grid img {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.social-section h2 {
+    margin: 0 0 20px;
+    font-size: 2rem;
+    text-align: left;
+}
+footer {
+    background: #27374d;
+    color: #f0ebe3;
+    text-align: center;
+    padding: 20px;
+    border-top: 8px solid #ffc288;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center; /* Center-align on smaller screens */
+    }
+    .about h2,
+    .mission h2,
+    .social-section h2 {
+        text-align: center;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+	
+}
