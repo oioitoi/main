@@ -111,9 +111,10 @@ nav ul li a {
 /* Toys section */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 33.33% 33.33% 33.33%; /* Three columns for larger screens */
     gap: 20px;
     padding: 40px;
+    justify-content: center;
 }
 
 .grid-item img {
@@ -130,7 +131,7 @@ nav ul li a {
 /* Blog section */
 .blog-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 33.33% 33.33% 33.33%;
     gap: 20px;
     justify-content: center;
     padding: 40px 20px;
@@ -177,10 +178,10 @@ nav ul li a {
 }
 .social-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    justify-items: center;
-    padding: 20px;
+ display: grid;
+grid-template-columns: 33.33% 33.33% 33.33%;
+gap: 15px;
+justify-content: center; /* Center-aligns the grid content */
 }
 
 .social-grid img {
@@ -222,19 +223,19 @@ footer p {
     .social-section h2 {
         text-align: center;
     }
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+  	.grid-container {
+        grid-template-columns: 50% 50%; /* Two columns for smaller screens */
     }
 
     .blog-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 33.33% 33.33% 33.33%;
     }
 	
     .blog-post img {
         width: 90%; /* Smaller images for smaller screens */
     }
     .social-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 50% 50%; /* Two columns for smaller screens */
     }
 	
 }
