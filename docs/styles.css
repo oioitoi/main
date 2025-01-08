@@ -120,7 +120,7 @@ nav ul li a {
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    border: 3px solid #526d82;
+    border: 0px solid #526d82;
     object-fit: cover;
     display: block;
 }
@@ -130,35 +130,41 @@ nav ul li a {
 /* Blog section */
 .blog-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-content: center;
     padding: 40px 20px;
 }
 
 .blog-post {
-    flex: 1 1 calc(33.333% - 20px);
     background: #ffffff;
     padding: 20px;
     border: 1px solid #dde6ed;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .blog-post img {
-    width: 100%;
-    border-radius: 10px;
+    width: 100%; /* Responsive width */
+    aspect-ratio: 1 / 1; /* Ensures the image is square */
+    object-fit: cover; /* Maintains content within the square frame */
+    border-radius: 10px; /* Optional: Rounded corners */
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image */
 }
-
 .blog-post h3 {
     font-size: 1.5rem;
-    margin: 15px 0;
+    color: #526d82;
 }
-
 .blog-post p {
     font-size: 1rem;
-    color: #526d82;
-    text-align: left;
+    color: #27374d;
+    margin-bottom: 10px;
+}
+.blog-post a {
+    text-decoration: none;
+    color: #ff6701;
+    font-weight: bold;
 }
 
 /* Social section */
@@ -171,19 +177,23 @@ nav ul li a {
 }
 .social-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     justify-items: center;
+    padding: 20px;
 }
 
 .social-grid img {
-    width: 90%;
-    aspect-ratio: 1 / 1;
-    border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Ensures square images */
     object-fit: cover;
-    margin: auto;
+    border-radius: 10px; /* Optional rounded corners */
+    transition: transform 0.3s ease;
 }
 
+.social-grid img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
 .social-section h2 {
     margin: 0 0 20px;
     font-size: 2rem;
@@ -219,7 +229,10 @@ footer p {
     .blog-container {
         grid-template-columns: 1fr;
     }
-
+	
+    .blog-post img {
+        width: 90%; /* Smaller images for smaller screens */
+    }
     .social-grid {
         grid-template-columns: repeat(2, 1fr);
     }
