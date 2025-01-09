@@ -1,28 +1,34 @@
 @charset "UTF-8";
 /* CSS Document */
-/* General styles */body {
+/* General styles */
+body {
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     color: #27374d;
-    background-color: #f0ebe3;
+    background-color: #ffffff; /* Ensures the entire background is white */
 }
 
 main {
     max-width: 1200px;
-    margin: 100px auto 0; /* Adjust for fixed header */
+    margin: 60px auto 0; /* Adjust margin to create space below the navigation bar */
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto; /* Aligns with the sections below */
+}
 
-/* Header styles */header {
+/* Header styles */
+header {
     background: linear-gradient(135deg, #7d9d9c, #526d82);
-    padding: 20px 20px;
-    position: fixed;
+    padding: 80px 20px 20px; /* Increased top padding to compensate for navigation bar */
+    position: relative; /* Change to relative so it scrolls with the page */
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 500; /* Lower than the navigation bar */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -30,12 +36,16 @@ main {
     color: #f0ebe3;
     border-bottom: 8px solid #ffc288;
 }
-
 header img {
-    max-width: 80px;
+    max-width: 0px;
     height: auto;
 }
-
+.header-alt-logo {
+    max-width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto; /* Centers the logo in its container */
+    display: block; /* Ensures proper placement */
+}
 .header-text {
     flex: 1;
     text-align: center;
@@ -50,19 +60,55 @@ header img {
     margin: 10px 0 0;
     font-size: 1.2rem;
 }
+.logo-placeholder {
+    position: absolute;
+    top: 10px; /* Space from the top of the page */
+    left: 10px; /* Space from the left of the page */
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Makes it a perfect circle */
+    background-color: black; /* Placeholder background color */
+    border-radius: 50%; /* Makes it a circle */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    display: flex; /* Flexbox to center the image */
+    align-items: center; /* Vertically centers the image */
+    justify-content: center; /* Horizontally centers the image */
+    z-index: 1100; /* Ensures it appears above the navigation bar */
+}
+
+.logo-placeholder img {
+    width: 70%; /* Adjust size to fit within the circle */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+}
+nav {
+    position: fixed; /* Keeps the navigation bar fixed */
+    top: 0; /* Ensures it sticks to the very top of the screen */
+    width: 100%; /* Full width across the screen */
+    background-color: #526d82; /* Adjust background color as desired */
+    z-index: 1000; /* Keeps it above all other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
 
 nav ul {
     list-style: none;
+    max-width: 1200px; /* Matches section width */
+    margin: 0 auto; /* Centers the navigation bar content */
+    padding: 10px 20px; /* Adds padding around the links */
     display: flex;
-    gap: 20px;
-    padding: 0;
-    justify-content: flex-end; /* Align to the right */
+    justify-content: flex-end; /* Aligns links to the right */
+    gap: 20px; /* Adds space between links */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #f0ebe3;
+    color: #f0ebe3; /* Link color */
     font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc288; /* Highlight color on hover */
 }
 
 /* About section */
@@ -238,8 +284,9 @@ footer p {
 /* Responsive styles */
 @media (max-width: 768px) {
     nav ul {
-        justify-content: center; /* Center-align on smaller screens */
+        justify-content: center; /* Center align links on smaller screens */
     }
+}
     .about h2,
     .mission h2,
     .social-section h2 {
@@ -260,4 +307,4 @@ footer p {
         grid-template-columns: 50% 50%; /* Two columns for smaller screens */
     }
 	
-}
+
