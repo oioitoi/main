@@ -139,7 +139,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: bottom;
     text-align: center;
-    padding: 10px 20px 80px; /* Adjust top padding */
+    padding: 10px 20px 60px; /* Adjust top padding */
     margin-top: -5px;
 }
 .mission h2 {
@@ -171,7 +171,7 @@ nav ul li a:hover {
 .grid-item {
     position: relative;
     width: 30%; /* Proportional size for larger screens */
-    max-width: 250px; /* Larger size for desktop screens */
+    max-width: 280px; /* Increased size for larger screens */
     aspect-ratio: 1 / 1; /* Ensures perfect circle */
     overflow: hidden; /* Prevents overflow of content */
     text-align: center;
@@ -209,6 +209,7 @@ nav ul li a:hover {
     justify-content: center; /* Vertically centers the text */
     align-items: center; /* Horizontally centers the text */
     font-size: 0.9rem; /* Standard text size for readability */
+    padding: 5%; /* Adds internal padding for text buffer */
     z-index: 2; /* Ensures description appears above the image */
 }
 
@@ -217,17 +218,17 @@ nav ul li a:hover {
     font-weight: bold;
     margin-bottom: 5px; /* Space below bold text */
 }
-.description span {
-    font-weight: normal; /* Normal weight for extra text */
-}
 /* Blog section */
 .blog-container {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    gap: 20px;
-    justify-content: center;
-    padding: 40px 20px;
+    grid-template-columns: 33.33% 33.33% 33.33%; /* Three columns using percentages */
+    gap: 3%; /* Space between items */
+    width: 100%; /* Full-width container */
+    margin: 0 auto; /* Centers the blog container */
+    padding: 0 2%; /* Padding to prevent overflow */
 }
+
+/* Blog post styling */
 .blog-post {
     background: #ffffff;
     padding: 20px;
@@ -236,27 +237,23 @@ nav ul li a:hover {
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .blog-post img {
-    width: 100%; /* Responsive width */
-    aspect-ratio: 1 / 1; /* Ensures the image is square */
-    object-fit: cover; /* Maintains content within the square frame */
+    width: 100%; /* Matches container size */
+    aspect-ratio: 1 / 1; /* Ensures square image */
     border-radius: 10px; /* Optional: Rounded corners */
-    display: block; /* Ensures the image is treated as a block element */
-    margin: 0 auto; /* Centers the image */
+    object-fit: cover; /* Maintains image proportions */
 }
+
 .blog-post h3 {
     font-size: 1.5rem;
     color: #526d82;
 }
+
 .blog-post p {
     font-size: 1rem;
     color: #27374d;
     margin-bottom: 10px;
-}
-.blog-post a {
-    text-decoration: none;
-    color: #ff6701;
-    font-weight: bold;
 }
 
 /* Social section */
@@ -305,12 +302,15 @@ footer p {
 
 /* Responsive styles for medium screens */
 @media (max-width: 1024px) {
-    .grid-container {
+   .grid-container {
         grid-template-columns: 50% 50%; /* Two columns for medium screens */
     }
     .grid-item {
-        width: 45%; /* Slightly smaller size for medium screens */
-        max-width: 200px; /* Restrict max width */
+        width: 45%; /* Slightly larger size for medium screens */
+        max-width: 220px; /* Restrict max width */
+    }
+    .description {
+        font-size: 0.85rem; /* Adjust text size slightly */
     }
 }
 /* Responsive styles for smaller screens */
@@ -327,17 +327,18 @@ footer p {
     .social-section h2 {
         text-align: center;
     }
-  	  .grid-container {
+  	 .grid-container {
         grid-template-columns: 50% 50%; /* Two columns for smaller screens */
         justify-content: center; /* Ensure container is centered */
         padding: 0 5%; /* Padding to prevent grid overflow */
     }
     .grid-item {
         width: 90%; /* Fit within smaller screens */
-        max-width: 150px; /* Restrict max width */
+        max-width: 180px; /* Restrict max width */
     }
     .description {
         font-size: 0.8rem; /* Slightly smaller text for smaller screens */
+        padding: 10%; /* Increased padding for better text readability */
     }
 
     .blog-container {
