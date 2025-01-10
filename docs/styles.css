@@ -158,36 +158,37 @@ nav ul li a:hover {
 /* Parent grid container */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-    gap: 20px; /* Adds space between items */
-    justify-items: center; /* Centers each grid item horizontally */
-    width: 100%; /* Ensures container spans full width */
-    margin: 0 auto; /* Centers the grid container on the page */
+    grid-template-columns: 33.33% 33.33% 33.33%; /* Ensures three columns for larger screens */
+    gap: 30px; /* Adds space between items */
+    justify-items: center; /* Centers grid items */
+    width: 100%; /* Full-width container */
+    margin: 0 auto; /* Centers the grid container */
 }
 
 /* Grid items */
 .grid-item {
     position: relative;
-    width: 150px; /* Fixed size for consistent alignment */
-    height: 150px; /* Matches width for a perfect square */
-    overflow: hidden; /* Prevents overflow */
+    width: 90%; /* Ensures responsive scaling based on the container */
+    max-width: 200px; /* Limits the size for larger screens */
+    aspect-ratio: 1 / 1; /* Ensures a perfect square */
+    overflow: hidden;
     text-align: center;
 }
 
 /* Circle container */
 .circle-container {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Matches the grid-item size */
+    height: 100%; /* Matches grid-item size */
     border-radius: 50%; /* Ensures circular shape */
     overflow: hidden;
 }
 
 /* Toy image */
 .circle-container img {
-    width: 100%; /* Matches container size */
-    height: 100%; /* Matches container size */
-    border-radius: 50%; /* Circular image */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Circular shape */
     object-fit: cover; /* Prevents distortion */
 }
 
@@ -196,24 +197,25 @@ nav ul li a:hover {
     position: absolute; /* Positioned over the image */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Matches the circle-container size */
+    height: 100%; /* Matches the circle-container size */
     border-radius: 50%; /* Circular shape */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     color: #ffffff; /* Text color */
-    display: flex; /* Centers the text */
+    display: flex; /* Centers text */
     flex-direction: column;
     justify-content: center; /* Vertically centers the text */
     align-items: center; /* Horizontally centers the text */
-    font-size: 0.9rem; /* Adjusts text size */
+    font-size: 1rem; /* Adjusted text size */
     z-index: 2; /* Ensures description appears above the image */
 }
 
 .description strong {
-    font-size: 1.1rem; /* Larger bold text */
+    font-size: 1.2rem; /* Bold text size */
     font-weight: bold;
-    margin-bottom: 5px; /* Spacing below bold text */
+    margin-bottom: 5px; /* Space below bold text */
 }
+
 .description span {
     font-weight: normal; /* Normal weight for extra text */
 }
@@ -315,10 +317,12 @@ footer p {
         text-align: center;
     }
   	.grid-container {
-        grid-template-columns: 50% 50%; /* Two columns on smaller screens */
+        grid-template-columns: 50% 50%; /* Two columns for smaller screens */
     }
     .grid-item {
-        width: 100%; /* Ensure proper alignment */
+        width: 45%; /* Smaller width to fit into narrower containers */
+        max-width: 150px; /* Limits size for very small screens */
+        aspect-ratio: 1 / 1; /* Ensures circles remain perfectly circular */
     }
 
     .blog-container {
