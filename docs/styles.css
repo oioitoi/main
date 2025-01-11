@@ -158,9 +158,9 @@ nav ul li a:hover {
 /* Parent grid container */
 .grid-container {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%; /* Three equal columns */
-    gap: 30px; /* Space between items */
-    justify-content: center; /* Centers grid items */
+    grid-template-columns: 33.33% 33.33% 33.33%; /* Three equal columns for larger screens */
+    gap: 3%; /* Space between items */
+    justify-content: center; /* Centers each grid item horizontally */
     max-width: 1200px; /* Limit container width */
     margin: 0 auto; /* Centers the grid container */
     padding: 0 2%; /* Adds padding to prevent overflow */
@@ -169,37 +169,28 @@ nav ul li a:hover {
 /* Grid items */
 .grid-item {
     position: relative;
-    width: 100%; /* Fills the grid column */
-    max-width: 300px; /* Ensures consistent size for larger screens */
-    aspect-ratio: 1 / 1; /* Ensures perfect square */
+    width: 33%; /* Proportional size for grid items */
+    max-width: 300px; /* Increased size for larger screens */
+    aspect-ratio: 1 / 1; /* Ensures perfect circle */
     overflow: hidden; /* Prevents overflow of content */
     text-align: center;
 }
 
-/* Circle container */
-.circle-container {
-    position: relative;
-    width: 100%; /* Matches the grid-item size */
-    height: 100%; /* Matches the grid-item size */
-    border-radius: 50%; /* Ensures circular shape */
-    overflow: hidden;
-}
-
 /* Toy image */
-.circle-container img {
-    width: 100%;
-    height: 100%;
+.grid-item img {
+    width: 100%; /* Matches container size */
+    height: 100%; /* Matches container size */
     border-radius: 50%; /* Circular image */
     object-fit: cover; /* Prevents distortion */
 }
 
 /* Description circle */
 .description {
-    position: absolute; /* Positioned over the image */
+    position: absolute; /* Positioned directly over the image */
     top: 0;
     left: 0;
-    width: 100%; /* Matches the circle-container size */
-    height: 100%; /* Matches the circle-container size */
+    width: 100%; /* Matches the grid-item size */
+    height: 100%; /* Matches the grid-item size */
     border-radius: 50%; /* Circular shape */
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     color: #ffffff; /* Text color */
@@ -207,11 +198,12 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center; /* Vertically centers the text */
     align-items: center; /* Horizontally centers the text */
-    font-size: 0.9rem; /* Standard text size for readability */
-    padding: 0%; /* Internal padding for text buffer */
+    font-size: 1rem; /* Standard text size */
+    padding: 10%; /* Internal padding for text buffer */
     z-index: 2; /* Ensures description appears above the image */
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s; /* Smooth hover transition */
 }
-
 .description strong {
     font-size: 1.2rem; /* Bold text size */
     font-weight: bold;
@@ -220,6 +212,12 @@ nav ul li a:hover {
 .description span {
     font-weight: normal; /* Normal weight for extra text */
 }
+
+/* Show description on hover */
+.grid-item:hover .description {
+    opacity: 1;
+}
+
 /* Blog section */
 .blog-container {
     display: grid;
@@ -308,10 +306,11 @@ footer p {
         grid-template-columns: 50% 50%; /* Two columns for medium screens */
     }
     .grid-item {
-        max-width: 220px; /* Larger size for medium screens */
+        max-width: 240px; /* Slightly smaller size for medium screens */
     }
     .description {
-        font-size: 0.85rem; /* Slightly smaller text */
+        font-size: 0.9rem; /* Adjust text size for readability */
+        padding: 8%; /* Slightly reduced padding */
     }
 }
 /* Responsive styles for smaller screens */
@@ -337,7 +336,7 @@ footer p {
     }
     .description {
         font-size: 0.8rem; /* Slightly smaller text */
-        padding: 10%; /* Increased padding for better readability */
+        padding: 12%; /* Increased padding for better readability */
     }
 
     .blog-container {
