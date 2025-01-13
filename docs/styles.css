@@ -156,59 +156,70 @@ nav ul li a:hover {
 
 /* Toys section */
 /* Parent grid container */
+/* Parent grid container */
 .grid-container {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%; /* Three equal columns for larger screens */
+    grid-template-columns: 33% 33% 33%; /* Three equal columns using percentages */
     gap: 3%; /* Space between items */
-    justify-content: center; /* Centers each grid item horizontally */
+    justify-content: center; /* Centers grid items horizontally */
     max-width: 1200px; /* Limit container width */
     margin: 0 auto; /* Centers the grid container */
-    padding: 0 2%; /* Adds padding to prevent overflow */
+    padding: 0 2%; /* Padding for layout consistency */
+}
+
+/* Grid items */
+.grid-item {
+    position: relative; /* Ensures description can overlay image */
+    width: 100%; /* Matches container size */
+    max-width: 300px; /* Ensures proper size for larger screens */
+    aspect-ratio: 1 / 1; /* Ensures perfect circles */
+    overflow: hidden; /* Prevents overflow of content */
+    text-align: center;
 }
 
 /* Toy image */
 .grid-item img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    border: 0px solid #526d82;
-    object-fit: cover;
+    width: 100%; /* Matches grid-item size */
+    height: 100%; /* Matches grid-item size */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Prevents distortion */
+    position: relative; /* Maintains normal flow */
+    z-index: 1; /* Ensures the image is below the hover circle */
 }
 
-/* Description circle */
-.description {
-    position: absolute; /* Positioned directly over the image */
+/* Hover circle (description circle) */
+.grid-item::before {
+    content: ''; /* Creates a pseudo-element */
+    position: absolute; /* Positioned relative to the grid-item */
     top: 0;
     left: 0;
-    width: 100%; /* Matches the grid-item size */
-    height: 100%; /* Matches the grid-item size */
+    width: 100%; /* Matches grid-item size */
+    height: 100%; /* Matches grid-item size */
     border-radius: 50%; /* Circular shape */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: #ffffff; /* Text color */
-    display: flex; /* Centers the text */
-    flex-direction: column;
-    justify-content: center; /* Vertically centers the text */
-    align-items: center; /* Horizontally centers the text */
-    font-size: 1rem; /* Standard text size */
-    padding: 10%; /* Internal padding for text buffer */
-    z-index: 2; /* Ensures description appears above the image */
-    opacity: 0; /* Hide by default */
-    transition: opacity 0.3s; /* Smooth hover transition */
-}
-.description strong {
-    font-size: 1.2rem; /* Bold text size */
-    font-weight: bold;
-    margin-bottom: 5px; /* Space below bold text */
-}
-.description span {
-    font-weight: normal; /* Normal weight for extra text */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: 2; /* Ensures it overlays the image */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
 }
 
-/* Show description on hover */
+/* Show hover circle on mouse-over */
+.grid-item:hover::before {
+    opacity: 1; /* Makes the circle visible */
+}
+
+/* Text inside hover circle */
 .grid-item:hover .description {
-    opacity: 1;
+    position: absolute; /* Aligns the text within the circle */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    z-index: 3; /* Above the hover circle */
+    color: #ffffff; /* White text */
+    font-size: 1rem; /* Text size */
+    text-align: center; /* Center-align text */
+    pointer-events: none; /* Ensures text doesn't interfere with hover */
+    line-height: 1.5; /* Adjust line spacing */
 }
-
 /* Blog section */
 .blog-container {
     display: grid;
