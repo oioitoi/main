@@ -166,22 +166,13 @@ nav ul li a:hover {
     padding: 0 2%; /* Adds padding to prevent overflow */
 }
 
-/* Grid items */
-.grid-item {
-    position: relative;
-    width: 33%; /* Proportional size for grid items */
-    max-width: 300px; /* Increased size for larger screens */
-    aspect-ratio: 1 / 1; /* Ensures perfect circle */
-    overflow: hidden; /* Prevents overflow of content */
-    text-align: center;
-}
-
 /* Toy image */
 .grid-item img {
-    width: 100%; /* Matches container size */
-    height: 100%; /* Matches container size */
-    border-radius: 50%; /* Circular image */
-    object-fit: cover; /* Prevents distortion */
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 0px solid #526d82;
+    object-fit: cover;
 }
 
 /* Description circle */
