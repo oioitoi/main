@@ -337,8 +337,13 @@ footer p {
         max-width: 180px; /* Smaller size for smaller screens */
     }
     .description {
-        font-size: 0.8rem; /* Adjusted text size */
-        padding: 12%; /* Larger padding for readability */
+        font-size: 0.75rem; /* Reduce text size for mobile screens */
+        padding: 8%; /* Adjust padding to keep text inside the circle */
+        line-height: 1.3; /* Slightly reduce line spacing */
+    }
+
+    .description strong {
+        font-size: 0.9rem; /* Adjust title size for better readability */
     }
 
     .blog-container {
