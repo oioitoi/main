@@ -293,14 +293,14 @@ footer p {
 
 /* Responsive styles for medium screens */
 @media (max-width: 1024px) {
-    .grid-container {
-        grid-template-columns: 50% 50%; /* Two columns for medium screens */
+       .grid-container {
+        grid-template-columns: 50% 50%; /* Two columns using percentages */
     }
     .grid-item {
-        max-width: 240px; /* Slightly smaller size for medium screens */
+        max-width: 240px; /* Smaller size for medium screens */
     }
     .description {
-        font-size: 0.9rem; /* Adjust text size for readability */
+        font-size: 0.9rem; /* Adjusted text size */
         padding: 8%; /* Slightly reduced padding */
     }
 }
@@ -318,16 +318,16 @@ footer p {
     .social-section h2 {
         text-align: center;
     }
-  	.grid-container {
-        grid-template-columns: 50% 50%; /* Two columns for smaller screens */
-        padding: 0 5%; /* Padding to prevent grid overflow */
+  .grid-container {
+        grid-template-columns: 50% 50%; /* Two columns using percentages */
+        padding: 0 5%; /* Adjusted padding for small screens */
     }
     .grid-item {
-        max-width: 180px; /* Restrict size for smaller screens */
+        max-width: 180px; /* Smaller size for smaller screens */
     }
     .description {
-        font-size: 0.8rem; /* Slightly smaller text */
-        padding: 12%; /* Increased padding for better readability */
+        font-size: 0.8rem; /* Adjusted text size */
+        padding: 12%; /* Larger padding for readability */
     }
 
     .blog-container {
