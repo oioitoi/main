@@ -220,7 +220,7 @@ nav ul li a:hover {
     transform: translate(-50%, -50%); /* Perfect centering */
     z-index: 3; /* Above the hover circle */
     color: #ffffff; /* White text */
-    font-size: 1rem; /* Text size */
+    font-size: 1.2rem; /* Text size */
     text-align: center; /* Center-align text */
     pointer-events: none; /* Ensures text doesn't interfere with hover */
     line-height: 1.5; /* Adjust line spacing */
