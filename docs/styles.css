@@ -337,9 +337,10 @@ footer p {
         max-width: 180px; /* Smaller size for smaller screens */
     }
     .description {
-        font-size: 0.75rem; /* Reduce text size for mobile screens */
-        padding: 8%; /* Adjust padding to keep text inside the circle */
-        line-height: 1.3; /* Slightly reduce line spacing */
+        font-size: 0.70rem; /* Reduce text size for mobile screens */
+        padding: 0.5%; /* Adjust padding to keep text inside the circle */
+		padding-top: 5.%; /* Adjust padding to keep text inside the circle */
+        line-height: 0.5; /* Slightly reduce line spacing */
     }
 
     .description strong {
