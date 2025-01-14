@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
+/* Set root font size */
+html {
+    font-size: 16px; /* Base size for rem units */
+}
+
 /* General styles */
 body {
     margin: 0;
@@ -317,6 +322,9 @@ footer p {
 }
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
+	 html {
+        font-size: 14px; /* Smaller root font size */
+    }
    
 	nav ul {
         justify-content: center; /* Center align links on smaller screens */
@@ -337,10 +345,10 @@ footer p {
         max-width: 180px; /* Smaller size for smaller screens */
     }
     .description {
-        font-size: 0.70rem; /* Reduce text size for mobile screens */
-        padding: 0.5%; /* Adjust padding to keep text inside the circle */
-		padding-top: 5.%; /* Adjust padding to keep text inside the circle */
-        line-height: 0.5; /* Slightly reduce line spacing */
+        font-size: 1rem; /* Reduce text size for mobile screens */
+        padding: 2%; /* Adjust padding to keep text inside the circle */
+		padding-top: 5%; /* Adjust padding to keep text inside the circle */
+        line-height: 1.3; /* Slightly reduce line spacing */
     }
 
     .description strong {
@@ -356,5 +364,29 @@ footer p {
     }
     .social-grid {
         grid-template-columns: 50% 50%; /* Two columns for smaller screens */
+    }
+}
+/* Responsive styles for smaller screens cellphone */
+@media (max-width: 480px) {
+	html {
+        font-size: 12px; /* Even smaller root font size */
+    }
+	.grid-container {
+        grid-template-columns: 50% 50%; /* Two columns using percentages */
+        padding: 0 2%; /* Adjusted padding for small screens */
+    }
+    .grid-item {
+        max-width: 180px; /* Smaller size for smaller screens */
+    }
+	
+	.description {
+        font-size: 0.70rem; /* Reduce text size for mobile screens */
+        padding: 0%; /* Adjust padding to keep text inside the circle */
+		padding-top: 3.%; /* Adjust padding to keep text inside the circle */
+        line-height: 0.2; /* Slightly reduce line spacing */
+    }
+
+    .description strong {
+        font-size: 0.9rem; /* Adjust title size for better readability */
     }
 }
