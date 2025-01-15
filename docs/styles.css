@@ -57,13 +57,17 @@ header img {
 }
 
 .header-text h1 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     margin: 0;
 }
 
 .header-text p {
-    margin: 10px 0 0;
+    font-size: 1.0rem;
+	margin: 10px 0 0;
     font-size: 1.2rem;
+}
+.small {
+    font-size: 0.75rem;
 }
 .logo-placeholder {
     position: absolute;
@@ -220,7 +224,7 @@ nav ul li a:hover {
     transform: translate(-50%, -50%); /* Perfect centering */
     z-index: 3; /* Above the hover circle */
     color: #ffffff; /* White text */
-    font-size: 1.2rem; /* Text size */
+    font-size: 1.0rem; /* Text size */
     text-align: center; /* Center-align text */
     pointer-events: none; /* Ensures text doesn't interfere with hover */
     line-height: 1.5; /* Adjust line spacing */
@@ -345,14 +349,14 @@ footer p {
         max-width: 180px; /* Smaller size for smaller screens */
     }
     .description {
-        font-size: 1rem; /* Reduce text size for mobile screens */
+        font-size: 0.4rem; /* Reduce text size for mobile screens */
         padding: 2%; /* Adjust padding to keep text inside the circle */
 		padding-top: 5%; /* Adjust padding to keep text inside the circle */
-        line-height: 1.3; /* Slightly reduce line spacing */
+        line-height: 1.0; /* Slightly reduce line spacing */
     }
 
     .description strong {
-        font-size: 0.9rem; /* Adjust title size for better readability */
+        font-size: 0.8rem; /* Adjust title size for better readability */
     }
 
     .blog-container {
@@ -380,13 +384,13 @@ footer p {
     }
 	
 	.description {
-        font-size: 0.70rem; /* Reduce text size for mobile screens */
+        font-size: 0.8rem; /* Reduce text size for mobile screens */
         padding: 0%; /* Adjust padding to keep text inside the circle */
 		padding-top: 3.%; /* Adjust padding to keep text inside the circle */
         line-height: 0.2; /* Slightly reduce line spacing */
     }
 
     .description strong {
-        font-size: 0.9rem; /* Adjust title size for better readability */
+        font-size: 1.0rem; /* Adjust title size for better readability */
     }
 }
