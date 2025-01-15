@@ -229,41 +229,45 @@ nav ul li a:hover {
     pointer-events: none; /* Ensures text doesn't interfere with hover */
     line-height: 1.5; /* Adjust line spacing */
 }
-/* Blog section */
+/* Blog container */
 .blog-container {
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%; /* Three columns using percentages */
+    grid-template-columns: 100%; /* Single column by default */
     gap: 3%; /* Space between items */
-    width: 100%; /* Full-width container */
-    margin: 0 auto; /* Centers the blog container */
-    padding: 0 2%; /* Padding to prevent overflow */
+    padding: 20px; /* Padding inside the section */
+    max-width: 100%; /* Ensures container width stays within the section */
+    margin: 0 auto; /* Center align the blog container */
 }
 
-/* Blog post styling */
+/* Blog post */
 .blog-post {
-    background: #ffffff;
-    padding: 20px;
-    border: 0px solid #dde6ed;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: block; /* Ensure visibility */
+    background: #ffffff; /* White background */
+    border: 1px solid #dde6ed; /* Border styling */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    text-align: center; /* Center align text */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
-
+/* Blog post images */
 .blog-post img {
-    width: 100%; /* Matches container size */
-    aspect-ratio: 1 / 1; /* Ensures square image */
-    border-radius: 10px; /* Optional: Rounded corners */
-    object-fit: cover; /* Maintains image proportions */
+    width: 100%; /* Responsive width */
+    max-width: 100%; /* Prevent overflow */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the image */
 }
 
+/* Blog post headings */
 .blog-post h3 {
-    font-size: 1.5rem;
-    color: #526d82;
+    font-size: 1.5rem; /* Headline size */
+    margin: 10px 0; /* Space around the heading */
+    color: #27374d; /* Heading color */
 }
 
+/* Blog post text */
 .blog-post p {
-    font-size: 1rem;
-    color: #27374d;
+    font-size: 1rem; /* Text size */
+    color: #526d82; /* Text color */
     margin-bottom: 10px;
 }
 
@@ -323,6 +327,9 @@ footer p {
         font-size: 0.9rem; /* Adjusted text size */
         padding: 8%; /* Slightly reduced padding */
     }
+	    .blog-container {
+        grid-template-columns: 33% 33% 33%; /* Three equal columns using percentages */
+    }
 }
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
@@ -359,8 +366,8 @@ footer p {
         font-size: 0.8rem; /* Adjust title size for better readability */
     }
 
-    .blog-container {
-        grid-template-columns: 33.33% 33.33% 33.33%;
+     .blog-container {
+        grid-template-columns: 50% 50%; /* Two equal columns for medium screens */
     }
 	
     .blog-post img {
