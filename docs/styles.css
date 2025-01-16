@@ -64,7 +64,6 @@ header img {
 .header-text p {
     font-size: 1.0rem;
 	margin: 10px 0 0;
-    font-size: 1.2rem;
 }
 .small {
     font-size: 0.75rem;
@@ -238,7 +237,6 @@ nav ul li a:hover {
     max-width: 100%; /* Ensures container width stays within the section */
     margin: 0 auto; /* Center align the blog container */
 }
-
 /* Blog post */
 .blog-post {
     display: block; /* Ensure visibility */
@@ -249,6 +247,7 @@ nav ul li a:hover {
     text-align: center; /* Center align text */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
+
 /* Blog post images */
 .blog-post img {
     width: 100%; /* Responsive width */
@@ -268,7 +267,6 @@ nav ul li a:hover {
 .blog-post p {
     font-size: 1rem; /* Text size */
     color: #526d82; /* Text color */
-    margin-bottom: 10px;
 }
 
 /* Social section */
@@ -315,8 +313,8 @@ footer p {
     font-size: 1rem;
 }
 
-/* Responsive styles for medium screens */
-@media (max-width: 1024px) {
+/* Responsive styles for desktop screens */
+@media (min-width: 1025px) {
        .grid-container {
         grid-template-columns: 50% 50%; /* Two columns using percentages */
     }
@@ -331,8 +329,8 @@ footer p {
         grid-template-columns: 33% 33% 33%; /* Three equal columns using percentages */
     }
 }
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
+/* Responsive styles for medium screens & tablets */
+@media (min-width: 480px) and (max-width: 1024px)  {
 	 html {
         font-size: 14px; /* Smaller root font size */
     }
@@ -367,7 +365,7 @@ footer p {
     }
 
      .blog-container {
-        grid-template-columns: 50% 50%; /* Two equal columns for medium screens */
+        grid-template-columns: 50% 50%; /* Two equal columns */
     }
 	
     .blog-post img {
@@ -378,7 +376,7 @@ footer p {
     }
 }
 /* Responsive styles for smaller screens cellphone */
-@media (max-width: 480px) {
+@media (max-width: 479px) {
 	html {
         font-size: 12px; /* Even smaller root font size */
     }
@@ -399,5 +397,9 @@ footer p {
 
     .description strong {
         font-size: 1.0rem; /* Adjust title size for better readability */
+    }
+	
+	.blog-container {
+        grid-template-columns: 33% 33% 33%; /* Three equal columns */
     }
 }
