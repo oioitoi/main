@@ -268,8 +268,14 @@ nav ul li a:hover {
     font-size: 1rem; /* Text size */
     color: #526d82; /* Text color */
 }
+#blog {
+    margin-bottom: 40px; /* Add extra space below the blog container */
+}
 
 /* Social section */
+#social {
+    padding-top: 40px; /* Add extra space above the social section header */
+}
 .social-section {
     background-color: #dde6ed;
     text-align: center;
@@ -376,7 +382,7 @@ footer p {
     }
 }
 /* Responsive styles for smaller screens cellphone */
-@media (max-width: <480px) {
+@media (max-width: 480px) {
 	html {
         font-size: 12px; /* Even smaller root font size */
     }
@@ -392,7 +398,7 @@ footer p {
         font-size: 0.8rem; /* Reduce text size for mobile screens */
         padding: 0%; /* Adjust padding to keep text inside the circle */
 		padding-top: 3.%; /* Adjust padding to keep text inside the circle */
-        line-height: 0.2; /* Slightly reduce line spacing */
+        line-height: 100%; /* Slightly reduce line spacing */
     }
 
     .description strong {
