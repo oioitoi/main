@@ -365,7 +365,7 @@ footer p {
     }
 
      .blog-container {
-        grid-template-columns: 50% 50%; /* Two equal columns */
+        grid-template-columns: 33%, 33%, 33%; /* Three equal columns */
     }
 	
     .blog-post img {
@@ -376,7 +376,7 @@ footer p {
     }
 }
 /* Responsive styles for smaller screens cellphone */
-@media (max-width: 479px) {
+@media (max-width: <480px) {
 	html {
         font-size: 12px; /* Even smaller root font size */
     }
@@ -400,6 +400,6 @@ footer p {
     }
 	
 	.blog-container {
-        grid-template-columns: 33% 33% 33%; /* Three equal columns */
+        grid-template-columns: 50%, 50%; /* Three equal columns */
     }
 }

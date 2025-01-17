@@ -99,23 +99,44 @@
  <section id="blog">
     <h2>blog</h2>
     <div class="blog-container">
-        <div class="blog-post">
-            <h3>Blog Post 1</h3>
-			<img src="images/blog-images/Blog-001.png" alt="Blog Post 1">
-            <p>A summary of the first blog post goes here.</p>
-        </div>
-        <div class="blog-post">
-            <h3>Blog Post 2</h3>
-			<img src="images/blog-images/Blog-002.png" alt="Blog Post 2">
-            <p>A summary of the second blog post goes here.</p>
-        </div>
-        <div class="blog-post">
-            <h3>Blog Post 3</h3>
-			<img src="images/blog-images/Blog-003.png" alt="Blog Post 3">
-            <p>A summary of the third blog post goes here.</p>
-        </div>
     </div>
 </section>
+		
+		<script>
+    const blogPosts = [
+        {
+            title: "feeling good",
+            img: "images/blog-images/Blog-001.png",
+            excerpt: "As an old year rolls into a new one, sitting in the window...",
+            link: "blog.html#feeling-good"
+        },
+        {
+            title: "this is where the second blog entry goes",
+            img: "images/blog-images/Blog-002.png",
+            excerpt: "Discover the joy of rolling into creativity with wheels!",
+            link: "blog.html#wheel-world-problems"
+        },
+		{
+            title: "do I really need to add this?",
+            img: "images/blog-images/Blog-002.png",
+            excerpt: "Discover the joy of rolling into creativity with wheels!",
+            link: "blog.html#wheel-world-problems"
+        },
+    ];
+
+    const blogContainer = document.querySelector(".blog-container");
+    blogPosts.slice(0, 3).forEach(post => {
+        const postDiv = document.createElement("div");
+        postDiv.className = "blog-post";
+        postDiv.innerHTML = `
+            <h3>${post.title}</h3>
+			<img src="${post.img}" alt="${post.title}">
+            <p>${post.excerpt}</p>
+            <a href="${post.link}">Read more</a>
+        `;
+        blogContainer.appendChild(postDiv);
+    });
+</script>
 		
 <section id="social" class="social-section">
     <h2>oioitoi gets social</h2>
@@ -143,41 +164,7 @@
     </div>
 </section>
 		
-<script>
-    const blogPosts = [
-        {
-            title: "feeling good",
-            img: "images/blog-images/Blog-001.png",
-            excerpt: "As an old year rolls into a new one, sitting in the window...",
-            link: "blog.html#feeling-good"
-        },
-        {
-            title: "wheel world problems",
-            img: "images/blog-images/Blog-002.png",
-            excerpt: "Discover the joy of rolling into creativity with wheels!",
-            link: "blog.html#wheel-world-problems"
-        },
-        {
-            title: "for the love of words",
-            img: "images/blog-images/Blog-003.png",
-            excerpt: "Unleashing imagination through storytelling and words.",
-            link: "blog.html#for-the-love-of-words"
-        }
-    ];
 
-    const blogContainer = document.querySelector(".blog-container");
-    blogPosts.slice(0, 3).forEach(post => {
-        const postDiv = document.createElement("div");
-        postDiv.className = "blog-post";
-        postDiv.innerHTML = `
-            <img src="${post.img}" alt="${post.title}">
-            <h3>${post.title}</h3>
-            <p>${post.excerpt}</p>
-            <a href="${post.link}">Read more</a>
-        `;
-        blogContainer.appendChild(postDiv);
-    });
-</script>
 		
         <section id="contact">
             <h2>contact us</h2>
