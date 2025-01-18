@@ -233,7 +233,7 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: 33% 33% 33%; /* Three equal columns using percentages */
     gap: 20px; /* Space between items */
-    padding: 0 20px; /* Horizontal padding to align with other sections */
+    padding: 0 10px; /* Horizontal padding to align with other sections */
     max-width: 1200px; /* Match the width of other sections */
     margin: 0 auto; /* Center the container on the page */
     box-sizing: border-box; /* Ensures padding is included in total width */
@@ -332,7 +332,7 @@ footer p {
         padding: 8%; /* Slightly reduced padding */
     }
  	.blog-container {
-        grid-template-columns: 50% 50%; /* Two columns for medium screens */
+        grid-template-columns: 32% 32% 32%; /* Three columns for larger screens */
     }
 }
 /* Responsive styles for medium screens & tablets */
@@ -371,7 +371,7 @@ footer p {
     }
 
      .blog-container {
-        grid-template-columns: 100%; /* Single column for smaller screens */
+        grid-template-columns: 49% 49%; /* Two columns for medium screens */
         padding: 0 10px; /* Smaller horizontal padding */
     }
 	
@@ -407,6 +407,7 @@ footer p {
     }
 	
 	.blog-container {
-        grid-template-columns: 50%, 50%; /* Three equal columns */
+        grid-template-columns: 100%; /* Single column for smaller screens */
+        padding: 0 10px; /* Smaller horizontal padding */
     }
 }
