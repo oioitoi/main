@@ -322,7 +322,7 @@ footer p {
 /* Responsive styles for desktop screens */
 @media (min-width: 1025px) {
        .grid-container {
-        grid-template-columns: 50% 50%; /* Two columns using percentages */
+        grid-template-columns: 33.3% 33.3% 33.3%; /* Three columns using percentages */
     }
     .grid-item {
         max-width: 240px; /* Smaller size for medium screens */
