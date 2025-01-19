@@ -4,6 +4,14 @@
 html {
     font-size: 16px; /* Base size for rem units */
 }
+/* Global h2 header style */
+h2 {
+    font-size: 2.5rem; /* Consistent font size */
+    font-weight: bold; /* Consistent weight */
+    margin: 10px 0; /* Consistent spacing */
+    color: #526d82; /* Consistent color */
+    text-align: left; /* Default alignment */
+}
 
 /* General styles */
 body {
@@ -15,8 +23,8 @@ body {
 
 main {
     max-width: 1200px;
-    margin: 60px auto 0; /* Adjust margin to create space below the navigation bar */
-    padding: 20px;
+    margin: 10px auto 0; /* Adjust margin to create space below the navigation bar */
+    padding: 10px;
     background-color: #ffffff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -70,8 +78,8 @@ header img {
 }
 .logo-placeholder {
     position: absolute;
-    top: 10px; /* Space from the top of the page */
-    left: 10px; /* Space from the left of the page */
+    top: 15px; /* Space from the top of the page */
+    left: 15px; /* Space from the left of the page */
     width: 100px; /* Adjust size as needed */
     height: 100px; /* Makes it a perfect circle */
     background-color: black; /* Placeholder background color */
@@ -146,8 +154,8 @@ nav ul li a:hover {
     background: url('images/wave-bottom-e4dccf.png') no-repeat bottom center, #ffffff;
     background-size: cover;
     background-position: bottom;
-    text-align: center;
-    padding: 10px 20px 60px; /* Adjust top padding */
+    text-align: top;
+    padding: 10px 20px 80px; /* Adjust top padding */
     margin-top: -5px;
 }
 .mission h2 {
@@ -164,15 +172,15 @@ nav ul li a:hover {
 
 /* Toys section */
 /* Parent grid container */
-/* Parent grid container */
 .grid-container {
     display: grid;
-    grid-template-columns: 33% 33% 33%; /* Three equal columns using percentages */
+    grid-template-columns: 33.3% 33.3% 33.3%; /* Three equal columns using percentages */
     gap: 3%; /* Space between items */
     justify-content: center; /* Centers grid items horizontally */
     max-width: 1200px; /* Limit container width */
     margin: 0 auto; /* Centers the grid container */
-    padding: 0 2%; /* Padding for layout consistency */
+    padding: 0 10%; /* Padding for layout consistency */
+	padding-bottom: 20%
 }
 
 /* Grid items */
@@ -227,6 +235,13 @@ nav ul li a:hover {
     text-align: center; /* Center-align text */
     pointer-events: none; /* Ensures text doesn't interfere with hover */
     line-height: 1.5; /* Adjust line spacing */
+}
+#toys {
+    margin-bottom: 40px; /* Add space below the toys section */
+}
+
+#blog {
+    margin-top: 100px; /* Add space above the blog section */
 }
 /* Blog container */
 .blog-container {
@@ -303,7 +318,7 @@ nav ul li a:hover {
 }
 .social-section h2 {
     margin: 0 0 20px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: left;
 }
 footer {
@@ -352,7 +367,7 @@ footer p {
     .social-section h2 {
         text-align: center;
     }
-  .grid-container {
+  	.grid-container {
         grid-template-columns: 50% 50%; /* Two columns using percentages */
         padding: 0 5%; /* Adjusted padding for small screens */
     }
@@ -379,7 +394,7 @@ footer p {
         width: 90%; /* Smaller images for smaller screens */
     }
     .social-grid {
-        grid-template-columns: 50% 50%; /* Two columns for smaller screens */
+        grid-template-columns: 33% 33% 33%; /* Three columns for smaller screens */
     }
 }
 /* Responsive styles for smaller screens cellphone */
