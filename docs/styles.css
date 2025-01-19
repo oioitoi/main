@@ -82,11 +82,12 @@ header img {
     left: 15px; /* Space from the left of the page */
     width: 100px; /* Adjust size as needed */
     height: 100px; /* Makes it a perfect circle */
-    background-color: black; /* Placeholder background color */
-    border-radius: 50%; /* Makes it a circle */
-    overflow: hidden; /* Ensures the image stays within the circle */
-    display: flex; /* Flexbox to center the image */
-    align-items: center; /* Vertically centers the image */
+     background-color: black; /* Placeholder styling */
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures content stays within the circle */
     justify-content: center; /* Horizontally centers the image */
     z-index: 1100; /* Ensures it appears above the navigation bar */
 }
@@ -401,6 +402,10 @@ footer p {
 @media (max-width: 480px) {
 	html {
         font-size: 12px; /* Even smaller root font size */
+    }
+	.logo-placeholder {
+        width: 60px; /* Smaller width */
+        height: 60px; /* Smaller height */
     }
 	.grid-container {
         grid-template-columns: 50% 50%; /* Two columns using percentages */

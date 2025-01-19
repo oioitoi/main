@@ -26,13 +26,26 @@
             <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
-    <header>
-         <img src="images/oioitoi-logo-white-thick.png" alt="oioitoi logo" class="header-logo">
+  <header>
+    <!-- Clickable logo -->
+    <a href="#top" class="logo-link">
+        <img src="images/oioitoi-logo-white-thick.png" alt="oioitoi logo" class="header-logo">
+    </a>
+
+    <!-- Header text and alternate logo -->
     <div class="header-text">
         <img src="images/oioitoi-logo-white-thick-wide.png" alt="oioitoi alternate logo" class="header-alt-logo">
         <p>learning through play</p>
-		</div>
-    </header>
+    </div>
+</header>
+	  <!-- Other page content -->
+
+    <script>
+        document.querySelector('.logo-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
     <main>
         <section id="about" class="about">
             <h2>welcome to oioitoi</h2>
