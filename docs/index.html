@@ -21,8 +21,6 @@
         <ul>
             <li><a href="#about">about</a></li>
             <li><a href="#toys">toys</a></li>
-            <li><a href="#blog">blog</a></li>
-            <li><a href="#social">social</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
@@ -49,11 +47,11 @@
     <main>
         <section id="about" class="about">
             <h2>welcome to oioitoi</h2>
-            <p>oioitoi is a woman-owned business with toys designed by a product-designer and educator... who also happens to be the mother of three wonderfully creative kids. Our website is currently under construaction, so please return later to find out more about oioitoi, and the story behind our unique toys.</p>
+            <p>oioitoi is a woman-owned business with toys designed by a product-designer and educator... who also happens to be the mother of three wonderfully creative kids. Our website is currently[...]</p>
         </section>
         <section id="mission" class="mission">
             <h2>our mission</h2>
-            <p>Our mission is to design and deliver safe, fun, and engaging toys that foster literacy and numeracy skills while encouraging curiosity and creativity. We aim to make all toys within the USA using sustainable, locally-sourced materials.</p>
+            <p>Our mission is to design and deliver safe, fun, and engaging toys that foster literacy and numeracy skills while encouraging curiosity and creativity. We aim to make all toys within the[...]</p>
         </section>
 <section id="toys">
     <h2>the toys</h2>
@@ -109,95 +107,7 @@
     </div>
 </section>
 		
- <section id="blog">
-    <h2>blog</h2>
-    <div class="blog-container">
-    </div>
-</section>
-		
-		<script>
-    const blogPosts = [
-        {
-            title: "cottontail trail",
-            img: "images/blog-images/Blog-002.png",
-            excerpt: "Loved hearing the story about Poppy Rose a New Hampshire adopted rescue rabbit...",
-            link: "blog.html#wheel-world-problems"
-        },
-		{
-            title: "feeling good",
-            img: "images/blog-images/Blog-001.png",
-            excerpt: "As an old year rolls into a new one, sitting in the window...",
-            link: "blog.html#feeling-good"
-        },
-        {
-            title: "this is where the second blog entry goes",
-            img: "images/blog-images/Blog-002.png",
-            excerpt: "Discover the joy of rolling into creativity with wheels!",
-            link: "blog.html#wheel-world-problems"
-        },
-		{
-            title: "do I really need to add this?",
-            img: "images/blog-images/Blog-002.png",
-            excerpt: "Discover the joy of rolling into creativity with wheels!",
-            link: "blog.html#wheel-world-problems"
-        },
-    ];
-
-    const blogContainer = document.querySelector(".blog-container");
-    blogPosts.slice(0, 3).forEach(post => {
-        const postDiv = document.createElement("div");
-        postDiv.className = "blog-post";
-        postDiv.innerHTML = `
-            <h3>${post.title}</h3>
-			<img src="${post.img}" alt="${post.title}">
-            <p>${post.excerpt}</p>
-            <a href="${post.link}">Read more</a>
-        `;
-        blogContainer.appendChild(postDiv);
-    });
-</script>
-		
-<section id="social" class="social-section">
-    <h2>oioitoi gets social</h2>
-    <p>Follow us on social media to stay updated with our latest toys, ideas, and reading resources.</p>
-    <div class="social-grid">
-		<a href="https://www.instagram.com/p/DHeevbZyhBO/?utm_source=ig_web_copy_link" target="_blank">
-            <img src="images/social-images/oioitoi_social_017.jpg" alt="Instagram Post 10">
-        	</a>
-		<a href="https://www.instagram.com/p/DHWAYQfxW_B/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-            <img src="images/social-images/oioitoi_social_015.jpg" alt="Instagram Post 9">
-        	</a>
-		<a href="https://www.instagram.com/p/DHKpECSO5cY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-            <img src="images/social-images/oioitoi_social_012.jpg" alt="Instagram Post 8">
-        	</a>
-		<a href="https://www.instagram.com/p/DG00lwoOTx1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-            <img src="images/social-images/oioitoi_social_011.jpg" alt="Instagram Post 7">
-        	</a>
-		<a href="https://www.instagram.com/p/DGvyutQOJcI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-            <img src="images/social-images/oioitoi-social-009.jpg" alt="Instagram Post 6">
-        	</a>
-		<a href="https://www.instagram.com/p/DGcOc4esWPc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-            <img src="images/social-images/social-007.jpeg" alt="Instagram Post 5">
-        	</a>
-        <a href="https://www.instagram.com/p/DF1JGDiRPae/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-            <img src="images/social-images/social-004.jpg" alt="Instagram Post 4">
-        	</a>
-		<a href="https://www.instagram.com/p/DExVLN0Rg5E/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-            <img src="images/social-images/social-003.jpg" alt="Instagram Post 3">
-        	</a>
-		<a href="https://www.instagram.com/p/DEiUDUxSIfH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-            <img src="images/social-images/social-002.png" alt="Instagram Post 2">
-        	</a>
-		<a href="https://www.instagram.com/p/DCaHy5lRI_u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
-            <img src="images/social-images/social-001.jpeg" alt="Instagram Post 1">
-        	</a>
-
-    </div>
-</section>
-		
-
-		
-        <section id="contact">
+<section id="contact">
             <h2>contact us</h2>
             <p>Have questions or want to learn more? Feel free to reach out to us at <a href="mailto:oioitoiquery@gmail.com">oioitoiquery@gmail.com</a>.</p>
         </section>
