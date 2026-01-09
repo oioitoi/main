@@ -1,4 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="512" height="512">
-  <!-- Single-color silhouette used as Safari pinned-tab mask -->
-  <path fill="#000" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512" role="img" aria-label="oioitoi mask">
+  <title>oioitoi squirrel mask</title>
+  <!-- Single-color silhouette mask for Safari pinned tabs -->
+  <path fill="#000" d="
+    M10 50
+    C10 32, 25 20, 34 18
+    C40 16, 44 20, 50 24
+    C58 28, 62 30, 68 28
+    C74 26, 80 20, 90 22
+    C92 24, 96 30, 94 40
+    C92 52, 84 58, 82 64
+    C80 70, 76 76, 68 78
+    C60 80, 56 74, 50 74
+    C42 74, 38 82, 30 82
+    C22 82, 16 70, 18 64
+    C20 58, 28 48, 26 40
+    C24 32, 20 54, 10 50
+    Z"/>
 </svg>
