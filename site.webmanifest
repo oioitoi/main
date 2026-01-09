@@ -1,0 +1,20 @@
+{
+  "name": "oioitoi",
+  "short_name": "oioitoi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#9AAE3E",
+  "icons": [
+    {
+      "src": "images/apple-touch-icon.png?v=1",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "images/favicon-32.png?v=1",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

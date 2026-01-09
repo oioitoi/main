@@ -1,15 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Documentation</title>
-  <link rel="icon" href="images/favicon.ico?v=1" type="image/x-icon">
-  <link rel="icon" href="images/favicon-32.png?v=1" sizes="32x32" type="image/png">
-  <link rel="icon" href="images/favicon-16.png?v=1" sizes="16x16" type="image/png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oioitoi</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico?v=1" type="image/x-icon">
+    <link rel="icon" href="images/favicon-32.png?v=1" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon-16.png?v=1" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=1">
+    <link rel="mask-icon" href="images/favicon-mask.svg?v=1" color="#9AAE3E">
+    <link rel="manifest" href="site.webmanifest?v=1">
+    <meta name="theme-color" content="#9AAE3E">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Documentation content -->
+     <nav>
+        <div class="logo-placeholder">
+            <img src="images/oioitoi-logo-white-thick.png" alt="Logo">
+            </div>
+
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#toys">toys</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+  <header>
+    <!-- Clickable logo -->
+    <a href="#top" class="logo-link">
+        <img src="images/oioitoi-logo-white-thick.png" alt="oioitoi logo" class="header-logo">
+    </a>
+
+    <!-- Header text and alternate logo -->
+    <div class="header-text">
+        <img src="images/oioitoi-logo-white-thick-wide.png" alt="oioitoi alternate logo" class="header-alt-logo">
+        <p>learning through play</p>
+    </div>
+</header>
+      <!-- Other page content -->
+
+    <script>
+        document.querySelector('.logo-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    <main>
+        <section id="about" class="about">
+            <h2>welcome to oioitoi</h2>
+            <p>oioitoi is a woman-owned business with toys designed by a product-designer and educator... who also happens to be the mother of three wonderfully creative kids. Our website is currently[...]</p>
+        </section>
+        <section id="mission" class="mission">
+            <h2>our mission</h2>
+            <p>Our mission is to design and deliver safe, fun, and engaging toys that foster literacy and numeracy skills while encouraging curiosity and creativity. We aim to make all toys within the[...]</p>
+        </section>
+<section id="toys">
+    <h2>the toys</h2>
+    <div class="grid-container">
+        <!-- Toy 1 -->
+        <div class="grid-item">
+            <img src="images/toy-images/Toy-1.jpg" alt="can o' fish">
+            <div class="description">
+                <strong>can o' fish</strong><br>
+                Visual interpretation of quantity before number characters
+            </div>
+        </div>
+        <!-- Toy 2 -->
+       <div class="grid-item">
+            <img src="images/toy-images/Toy-2.jpg" alt="inch worms">
+            <div class="description">
+                <strong>inch worms</strong><br>
+                Base-10 number system for early math and estimation skills
+            </div>
+        </div>
+        <!-- Toy 3 -->
+       <div class="grid-item">
+            <img src="images/toy-images/Toy-3.jpg" alt="fish eat fish">
+            <div class="description">
+                <strong>fish eat fish</strong><br>
+                An easy initial puzzle with a coffee-table or display aesthetic
+            </div>
+        </div>
+        <!-- Toy 4 -->
+       <div class="grid-item">
+            <img src="images/toy-images/Toy-4.jpg" alt="push toy lineup">
+            <div class="description">
+                <strong>push toy lineup</strong><br>
+                A range of push toy animals to aid coordination and movement
+            </div>
+        </div>
+        <!-- Toy 5 -->
+       <div class="grid-item">
+            <img src="images/toy-images/Toy-5.jpg" alt="under the sea">
+            <div class="description">
+                <strong>under the sea</strong><br>
+                A more challenging puzzle where sea creatures rule!
+            </div>
+        </div>
+        <!-- Toy 6 -->
+        <div class="grid-item">
+            <img src="images/toy-images/Toy-6.jpg" alt="squiroll">
+            <div class="description">
+                <strong>squiroll</strong><br>
+                An animal push toy from a range of less-often seen animal toys
+            </div>
+        </div>
+    </div>
+</section>
+        
+<section id="contact">
+            <h2>contact us</h2>
+            <p>Have questions or want to learn more? Feel free to reach out to us at <a href="mailto:oioitoiquery@gmail.com">oioitoiquery@gmail.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 oioitoi</p>
+    </footer>
+    
 </body>
 </html>

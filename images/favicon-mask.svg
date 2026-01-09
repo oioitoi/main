@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="512" height="512">
+  <!-- Single-color silhouette used as Safari pinned-tab mask -->
+  <path fill="#000" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
+</svg>
