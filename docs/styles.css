@@ -9,7 +9,7 @@ h2 {
     font-size: 2.5rem; /* Consistent font size */
     font-weight: bold; /* Consistent weight */
     margin: 10px 0; /* Consistent spacing */
-    color: #526d82; /* Consistent color */
+    color: #002e2c; /* Consistent color */
     text-align: left; /* Default alignment */
 }
 
@@ -25,7 +25,7 @@ main {
     max-width: 1200px;
     margin: 10px auto 0; /* Adjust margin to create space below the navigation bar */
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #fffaf5;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
