@@ -36,7 +36,7 @@ nav ul {
 
 /* Header styles */
 header {
-    background: linear-gradient(135deg, #a2af39, #526d82);
+    background: linear-gradient(90deg, #a2af39, #cdcf98);
     padding: 80px 20px 20px; /* Increased top padding to compensate for navigation bar */
     position: relative; /* Change to relative so it scrolls with the page */
     top: 0;
