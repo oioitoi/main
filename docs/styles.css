@@ -130,7 +130,7 @@ nav ul li a:hover {
 
 /* About section */
 .about {
-    background: url('images/wavy-edge-top-e4dccf.png') no-repeat top center, #ffffff;
+    background: url('images/wavy-edge-top-e4dccf.png') no-repeat top center, #fffaf5;
     background-size: cover;
     background-position: top;
     text-align: center;
