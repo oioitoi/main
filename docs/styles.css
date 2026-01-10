@@ -17,7 +17,7 @@ h2 {
 body {
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
-    color: #27374d;
+    color: #002e2c;
     background-color: #fffaf5; /* Ensures the entire background is white */
 }
 
@@ -152,7 +152,7 @@ nav ul li a:hover {
 
 /* Mission section */
 .mission {
-    background: url('images/wave-bottom-e4dccf.png') no-repeat bottom center, #ffffff;
+    background: url('images/wave-bottom-e4dccf.png') no-repeat bottom center, #fffaf5;
     background-size: cover;
     background-position: bottom;
     text-align: top;
@@ -257,7 +257,7 @@ nav ul li a:hover {
 
 /* Blog post */
 .blog-post {
-    background: #ffffff; /* White background */
+    background: #fffaf5; /* White background */
     border: 1px solid #dde6ed; /* Border styling */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Inner padding */
