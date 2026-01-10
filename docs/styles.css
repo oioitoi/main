@@ -101,7 +101,7 @@ nav {
     position: fixed; /* Keeps the navigation bar fixed */
     top: 0; /* Ensures it sticks to the very top of the screen */
     width: 100%; /* Full width across the screen */
-    background-color: #526d82; /* Adjust background color as desired */
+    background-color: #a2af39; /* Adjust background color as desired */
     z-index: 1000; /* Keeps it above all other elements */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
 }
