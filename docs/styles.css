@@ -36,7 +36,7 @@ nav ul {
 
 /* Header styles */
 header {
-    background: linear-gradient(135deg, #7d9d9c, #526d82);
+    background: linear-gradient(135deg, #a2af39, #526d82);
     padding: 80px 20px 20px; /* Increased top padding to compensate for navigation bar */
     position: relative; /* Change to relative so it scrolls with the page */
     top: 0;
@@ -46,7 +46,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    color: #f0ebe3;
+    color: #002e2c;
     border-bottom: 8px solid #ffc288;
 }
 header img {
