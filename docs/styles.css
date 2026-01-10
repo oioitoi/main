@@ -9,7 +9,7 @@ h2 {
     font-size: 2.5rem; /* Consistent font size */
     font-weight: bold; /* Consistent weight */
     margin: 10px 0; /* Consistent spacing */
-    color: #526d82; /* Consistent color */
+    color: #002e2c; /* Consistent color */
     text-align: left; /* Default alignment */
 }
 
@@ -17,15 +17,15 @@ h2 {
 body {
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
-    color: #27374d;
-    background-color: #ffffff; /* Ensures the entire background is white */
+    color: #002e2c;
+    background-color: #fffaf5; /* Ensures the entire background is white */
 }
 
 main {
     max-width: 1200px;
     margin: 10px auto 0; /* Adjust margin to create space below the navigation bar */
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #fffaf5;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -36,7 +36,7 @@ nav ul {
 
 /* Header styles */
 header {
-    background: linear-gradient(135deg, #7d9d9c, #526d82);
+    background: linear-gradient(0deg, #a2af39, #cdcf98);
     padding: 80px 20px 20px; /* Increased top padding to compensate for navigation bar */
     position: relative; /* Change to relative so it scrolls with the page */
     top: 0;
@@ -46,7 +46,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    color: #f0ebe3;
+    color: #002e2c;
     border-bottom: 8px solid #ffc288;
 }
 header img {
@@ -101,7 +101,7 @@ nav {
     position: fixed; /* Keeps the navigation bar fixed */
     top: 0; /* Ensures it sticks to the very top of the screen */
     width: 100%; /* Full width across the screen */
-    background-color: #526d82; /* Adjust background color as desired */
+    background-color: #a2af39; /* Adjust background color as desired */
     z-index: 1000; /* Keeps it above all other elements */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
 }
@@ -130,7 +130,7 @@ nav ul li a:hover {
 
 /* About section */
 .about {
-    background: url('images/wavy-edge-top-e4dccf.png') no-repeat top center, #ffffff;
+    background: url('images/wavy-edge-top-e4dccf.png') no-repeat top center, #fffaf5;
     background-size: cover;
     background-position: top;
     text-align: center;
@@ -140,7 +140,7 @@ nav ul li a:hover {
 .about h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #526d82;
+    color: #002e2c;
     text-align: left;
 }
 
@@ -152,7 +152,7 @@ nav ul li a:hover {
 
 /* Mission section */
 .mission {
-    background: url('images/wave-bottom-e4dccf.png') no-repeat bottom center, #ffffff;
+    background: url('images/wave-bottom-e4dccf.png') no-repeat bottom center, #fffaf5;
     background-size: cover;
     background-position: bottom;
     text-align: top;
@@ -162,7 +162,7 @@ nav ul li a:hover {
 .mission h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #526d82;
+    color: #002e2c;
     text-align: left;
 }
 .mission p {
@@ -257,7 +257,7 @@ nav ul li a:hover {
 
 /* Blog post */
 .blog-post {
-    background: #ffffff; /* White background */
+    background: #fffaf5; /* White background */
     border: 1px solid #dde6ed; /* Border styling */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Inner padding */
