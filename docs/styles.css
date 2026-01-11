@@ -267,7 +267,7 @@ nav ul li a:hover {
 
 /* Blog post */
 .blog-post {
-    background: #fffaf5; /* White background */
+    background: #fafafa; /* White background */
     border: 1px solid #dde6ed; /* Border styling */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Inner padding */
@@ -303,7 +303,7 @@ nav ul li a:hover {
     padding-top: 40px; /* Add extra space above the social section header */
 }
 .social-section {
-    background-color: #dde6ed;
+    background-color: #fafafa;
     text-align: center;
     padding: 40px 20px 20px; /* Increased top padding */
     position: relative;
@@ -334,7 +334,7 @@ nav ul li a:hover {
 }
 /* about section */
 .about {
-    background:  #fffaf5;
+    background:  #fafafa;
     background-size: cover;
     background-position: top;
     text-align: center;
@@ -354,22 +354,20 @@ nav ul li a:hover {
     text-align: left;
 }
 
-/* contactus section */
+/* .contact-us section */
 .contact-us {
-    background:  #fffaf5;
+    background:  #fafafa;
     background-size: cover;
     background-position: top;
     text-align: center;
     padding: 20px 20px 10px; /* Adjust bottom padding */
 }
-
 .contact-us h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #002e2c;
     text-align: left;
 }
-
 .contact-us p {
     font-size: 1.2rem;
     line-height: 1.8;
