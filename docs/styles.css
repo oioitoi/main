@@ -138,23 +138,23 @@ nav ul li a:hover {
     color: #99c8c9; /* Highlight color on hover */
 }
 
-/* About section */
-.about {
+/* Welcome section */
+.welcome {
     background: url('images/wavy-edge-top-e4dccf.png') no-repeat top center, #fffaf5;
     background-size: cover;
     background-position: top;
     text-align: center;
-    padding: 80px 20px 10px; /* Adjust bottom padding */
+    padding: 20px 20px 10px; /* Adjust bottom padding */
 }
 
-.about h2 {
+.welcome h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #002e2c;
     text-align: left;
 }
 
-.about p {
+.welcome p {
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: left;
@@ -166,7 +166,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: bottom;
     text-align: top;
-    padding: 10px 20px 80px; /* Adjust top padding */
+    padding: 10px 20px 10px; /* Adjust top padding */
     margin-top: -5px;
 }
 .mission h2 {
@@ -190,8 +190,8 @@ nav ul li a:hover {
     justify-content: center; /* Centers grid items horizontally */
     max-width: 1200px; /* Limit container width */
     margin: 0 auto; /* Centers the grid container */
-    padding: 0 10%; /* Padding for layout consistency */
-	padding-bottom: 20%
+    padding: 0 20%; /* Padding for layout consistency */
+	padding-bottom: 30%
 }
 
 /* Grid items */
@@ -241,7 +241,7 @@ nav ul li a:hover {
     left: 50%; /* Centers horizontally */
     transform: translate(-50%, -50%); /* Perfect centering */
     z-index: 3; /* Above the hover circle */
-    color: #ffffff; /* White text */
+    color: #fafafa; /* White text */
     font-size: 1.0rem; /* Text size */
     text-align: center; /* Center-align text */
     pointer-events: none; /* Ensures text doesn't interfere with hover */
@@ -332,17 +332,62 @@ nav ul li a:hover {
     font-size: 2.5rem;
     text-align: left;
 }
-footer {
+/* about section */
+.about {
+    background:  #fffaf5;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    padding: 20px 20px 10px; /* Adjust bottom padding */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #002e2c;
+    text-align: left;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* contactus section */
+.contact-us {
+    background:  #fffaf5;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    padding: 20px 20px 10px; /* Adjust bottom padding */
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #002e2c;
+    text-align: left;
+}
+
+.contact-us p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+}
+/* footer section */
+.footer {
     background: #002e2c;
     color: #fafafa;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     border-top: 8px solid #faa31b;
 }
 
 footer p {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.5rem
+    rem;
 }
 
 /* Responsive styles for desktop screens */
