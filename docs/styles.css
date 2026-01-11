@@ -16,7 +16,7 @@ html {
 /* Global h2 header style */
 h2 {
     font-size: 2.5rem; /* Consistent font size */
-    font-weight: 600; /* Consistent weight */
+    font-weight: 500; /* Consistent weight */
     margin: 10px 0; /* Consistent spacing */
     color: #002e2c; /* Consistent color */
     text-align: left; /* Default alignment */
@@ -47,7 +47,7 @@ nav ul {
 /* Header styles */
 header {
     background: linear-gradient(0deg, #a2af39, #f1f3be);
-    padding: 70px 0px 10px; /* Increased top padding to compensate for navigation bar */
+    padding: 40px 0px 10px; /* Increased top padding to compensate for navigation bar */
     position: relative; /* Change to relative so it scrolls with the page */
     top: 0;
     width: 100%;
@@ -333,16 +333,16 @@ nav ul li a:hover {
     text-align: left;
 }
 footer {
-    background: #27374d;
-    color: #f0ebe3;
+    background: #002e2c;
+    color: #fafafa;
     text-align: center;
     padding: 20px;
-    border-top: 8px solid #ffc288;
+    border-top: 8px solid #faa31b;
 }
 
 footer p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 /* Responsive styles for desktop screens */
