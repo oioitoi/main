@@ -46,7 +46,7 @@ nav ul {
 
 /* Header styles */
 header {
-    background: linear-gradient(0deg, #a2af39, #f1f3be);
+    background: linear-gradient(0deg, #fafafa, #fafafa);
     padding: 40px 0px 10px; /* Increased top padding to compensate for navigation bar */
     position: relative; /* Change to relative so it scrolls with the page */
     top: 0;
@@ -57,7 +57,7 @@ header {
     align-items: center;
     justify-content: space-between;
     color: #002e2c;
-    border-bottom: 8px solid #99c8c9;
+    border-bottom: 8px solid #fafafa;
 }
 header img {
     max-width: 500px;
@@ -182,7 +182,7 @@ nav ul li a:hover {
 }
 /* Toys section */
 .toys {
-    background: url('images/wavy-edge-top-cdcf98.png') no-repeat top center, #fffaf5;
+    background:  #fffaf5;
     background-size: cover;
     background-position: top;
     text-align: center;
