@@ -173,7 +173,7 @@ nav ul li a:hover {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #002e2c;
-    text-align: left;
+    text-align: center;
 }
 .mission p {
     font-size: 1.2rem;
@@ -192,7 +192,7 @@ nav ul li a:hover {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #002e2c;
-    text-align: left;
+    text-align: center;
 }
 .toys p {
     font-size: 1.2rem;
@@ -360,7 +360,7 @@ nav ul li a:hover {
     background:  #fafafa;
     background-size: cover;
     background-position: top;
-    text-align: center;
+    text-align: left;
     padding: 20px 20px 10px; /* Adjust bottom padding */
 }
 
@@ -368,7 +368,7 @@ nav ul li a:hover {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #002e2c;
-    text-align: left;
+    text-align: center;
 }
 
 .about p {
@@ -381,14 +381,14 @@ nav ul li a:hover {
     background:  #fafafa;
     background-size: cover;
     background-position: top;
-    text-align: center;
+    text-align: left;
     padding: 20px 20px 10px; /* Adjust bottom padding */
 }
 .more h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #002e2c;
-    text-align: left;
+    text-align: center;
 }
 .more p {
     font-size: 1.2rem;
@@ -401,14 +401,14 @@ nav ul li a:hover {
     background:  #fafafa;
     background-size: cover;
     background-position: top;
-    text-align: center;
+    text-align: left;
     padding: 20px 20px 10px; /* Adjust bottom padding */
 }
 .contact-us h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #002e2c;
-    text-align: left;
+    text-align: center;
 }
 .contact-us p {
     font-size: 1.2rem;
@@ -423,8 +423,7 @@ nav ul li a:hover {
     padding: 15px;
     border-top: 8px solid #faa31b;
 }
-
-footer p {
+.footer p {
     margin: 0;
     font-size: 1.5rem
     text-align: center;
