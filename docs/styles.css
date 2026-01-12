@@ -90,8 +90,8 @@ header img {
     position: absolute;
     top: 15px; /* Space from the top of the page */
     left: 15px; /* Space from the left of the page */
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Makes it a perfect circle */
+    width: 110px; /* Adjust size as needed */
+    height: 110px; /* Makes it a perfect circle */
      background-color:/* Placeholder styling */
     border-radius: 90%; /* Circular shape */
     display: flex;
@@ -129,7 +129,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #fafafa; /* Link color */
-    font-weight: bold;
+    font-weight: light;
     font-size: 1rem;
     transition: color 0.3s;
 }
@@ -372,6 +372,27 @@ nav ul li a:hover {
 }
 
 .about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+}
+/* more section */
+.more {
+    background:  #fafafa;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    padding: 20px 20px 10px; /* Adjust bottom padding */
+}
+
+.more h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #002e2c;
+    text-align: left;
+}
+
+.more p {
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: left;
