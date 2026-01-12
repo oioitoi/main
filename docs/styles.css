@@ -143,7 +143,7 @@ nav ul li a:hover {
     background: url('images/wavy-edge-top-cdcf98.png') no-repeat top center, #fffaf5;
     background-size: cover;
     background-position: top;
-    text-align: center;
+    text-align: left;
     padding: 20px 20px 10px; /* Adjust bottom padding */
 }
 
@@ -151,7 +151,7 @@ nav ul li a:hover {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #002e2c;
-    text-align: left;
+    text-align: center;
 }
 
 .welcome p {
