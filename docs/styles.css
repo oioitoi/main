@@ -166,7 +166,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: bottom;
     text-align: top;
-    padding: 10px 20px 150px; /* Adjust top padding */
+    padding: 10px 20px 140px; /* Adjust top padding */
     margin-top: -5px;
 }
 .mission h2 {
@@ -181,6 +181,18 @@ nav ul li a:hover {
     text-align: left;
 }
 /* Toys section */
+.toys h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #002e2c;
+    text-align: left;
+}
+.toys p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
 /* Parent grid container */
 .grid-container {
     display: grid;
@@ -389,6 +401,7 @@ nav ul li a:hover {
 footer p {
     margin: 0;
     font-size: 1.5rem
+    text-align: center;
     rem;
 }
 
