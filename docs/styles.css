@@ -140,7 +140,7 @@ nav ul li a:hover {
 
 /* Welcome section */
 .welcome {
-    background: url('images/wavy-edge-top-e4dccf.png') no-repeat top center, #fffaf5;
+    background: url('images/wavy-edge-top-cdcf98.png') no-repeat top center, #fffaf5;
     background-size: cover;
     background-position: top;
     text-align: center;
@@ -162,11 +162,11 @@ nav ul li a:hover {
 
 /* Mission section */
 .mission {
-    background: url('images/wave-bottom-e4dccf.png') no-repeat bottom center, #fffaf5;
+    background: url('images/wave-bottom-longer&gap-cdcf98.png') no-repeat bottom center, #fafafa;
     background-size: cover;
     background-position: bottom;
     text-align: top;
-    padding: 10px 20px 10px; /* Adjust top padding */
+    padding: 10px 20px 150px; /* Adjust top padding */
     margin-top: -5px;
 }
 .mission h2 {
@@ -180,7 +180,6 @@ nav ul li a:hover {
     line-height: 1.8;
     text-align: left;
 }
-
 /* Toys section */
 /* Parent grid container */
 .grid-container {
@@ -192,6 +191,11 @@ nav ul li a:hover {
     margin: 0 auto; /* Centers the grid container */
     padding: 0 20%; /* Padding for layout consistency */
 	padding-bottom: 30%
+}
+.toys p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
 }
 
 /* Grid items */
@@ -223,7 +227,7 @@ nav ul li a:hover {
     width: 100%; /* Matches grid-item size */
     height: 100%; /* Matches grid-item size */
     border-radius: 50%; /* Circular shape */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    background-color: #002e2c; /* Semi-transparent forest */
     z-index: 2; /* Ensures it overlays the image */
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease-in-out; /* Smooth transition */
