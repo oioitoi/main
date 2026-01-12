@@ -418,16 +418,16 @@ nav ul li a:hover {
 /* footer section */
 .footer {
     background: #002e2c;
-    color: #fafafa;
     text-align: center;
     padding: 15px;
     border-top: 8px solid #faa31b;
 }
 .footer p {
     margin: 0;
-    font-size: 1.5rem
+    font-size: 1.2rem;
+    color: #fafafa;
+    line-height: 1.8;
     text-align: center;
-    rem;
 }
 
 /* Responsive styles for desktop screens */
