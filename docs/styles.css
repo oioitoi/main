@@ -83,6 +83,13 @@ header img {
     font-size: 1.0rem;
 	margin: 10px 0 0;
 }
+.brand-name {
+    white-space: nowrap;
+}
+.brand-gap {
+    display: inline-block;
+    width: 0.25em;
+}
 .small {
     font-size: 0.75rem;
 }
