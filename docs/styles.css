@@ -74,6 +74,14 @@ header img {
     text-align: center;
 }
 
+.header-text > img {
+    display: block;
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+    margin: 0 auto;
+}
+
 .header-text h1 {
     font-size: 2.5rem;
     margin: 0;
